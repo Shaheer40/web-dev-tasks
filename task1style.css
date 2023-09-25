@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: #333;
+}
+header{
+    height: auto;
+    background-color: black;
+    position: static;
+}
+nav{
+    overflow: hidden;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+header h2{
+    color:white;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+header a:hover{
+    color: grey;
+    padding-bottom: 11px;
+    border-bottom: 2px rgb(112, 103, 103) solid;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    position: sticky;
+    left: 1030px;
+    padding-top: 6px;
+    margin-bottom: 5px;
+}
+#search-input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+#search-button {
+    background-color: grey;
+    color: #fff;
+    padding: 9px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+#search-button:hover {
+    background-color: #5b5b5c;
+}
+section{
+    background-repeat: none;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+section h1{
+    padding-top: 150px;
+    padding-left: 100px;
+}
+section h2{
+    padding: 5px;
+    text-align: center;
+}
+.hmargin{
+    margin-top: 5px;
+}
+section ol{
+    padding-left: 55px;
+    padding-top: 15px;
+    font-size: small;
+}
+#shop-button {
+    display: flex;
+    background-color: grey;
+    color: #fff;
+    padding: 9px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+    margin-top: 25px;
+    margin-left: 170px;
+}
+#shop-button:hover {
+    background-color: #5b5b5c;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-direction: row;
+}
+
+/* Style for individual cards */
+.card {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    transition: transform 0.3s ease-in-out; /*hover animation */
+}
+.card:hover {
+    transform: scale(1.05); /* Scale the card on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+/* Style for card headings */
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Style for card content */
+.card p {
+    font-size: 1rem;
+}
+
+/*styles for the card image */
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/*button style */
+.btn {
+    padding: 10px 20px;
+    background-color: grey;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+    margin-left: 70px;
+    justify-self: center; /* Center the button horizontally */
+}
+
+/* Style the button on hover */
+.btn:hover {
+    background-color: #242424;
+}
+footer{
+    background-color:black;
+    height: auto;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+i{
+    color: white;
+}
+footer a.side{
+    margin-top: 6px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 15px;
+    padding: 5px;
+}
+footer a.yt{
+    margin-top: 6px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+footer a.fb{
+    margin-top: 6px;
+    background-color: #3b5998;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+}
+a.side:hover, a.yt:hover, a.fb:hover{
+    color: #333;
+}
+.about{
+    background-color: #333;
+    border-radius: 10px;
+    padding: 5px;
+}
+.copyright{
+    float: right;
+    padding: 3px;
+    margin: 3px;
+    color: #333;
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+h1 {
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+    100% {
+    transform: scale(1);
+    }
+}
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+span:nth-child(odd) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 1, 0);
+}
+span:nth-child(even) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 1, 0);
+}
+@keyframes fade-in{
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
